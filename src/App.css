@@ -1,0 +1,300 @@
+body{
+  margin:auto;
+  background: ghostwhite
+}
+
+.WeatherApp{
+  width:100%;
+  height:100%;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto ;
+}
+/* Navigation*/
+.TopNav{
+  width:100%;
+  height:60px;
+  position:fixed;
+  background: white;
+  display:grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-auto-rows: 60px;
+  grid-column-gap : 20px;
+}
+
+.nav-item{
+  grid-column: span 1;
+  list-style:none;
+}
+.nav-item .item-logo{
+  line-height:60px;
+  vertical-align:   center;
+  font-size:20px;
+  margin-left:15px;
+  color:#1BBC9B;
+}
+.nav-item .item-link{
+  line-height:60px;
+  vertical-align:   center;
+  text-align: center;
+  font-size:15px;
+  height:50px;
+  color:black;
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.item-link:hover{
+  border-bottom: 5px #1BBC9B solid;
+}
+
+.nav-item .search-container{
+  line-height:60px;
+  vertical-align:   center;
+  text-align: center;
+  font-size:15px;
+  height:50px;
+}
+
+.nav-search{
+  border:none;
+  width:50%;
+  height:30px;
+  margin-right: 10px;
+  outline:none;
+  background: ghostwhite;
+  transition: .5s;
+  text-transform: uppercase;
+}
+.nav-search:hover{
+  width:90%;
+}
+
+
+
+
+
+
+.Content{
+  grid-column: 1;
+  height: 100%;
+  margin-top:60px;
+  width:100%;
+  background: ghostwhite;
+}
+.weather-container{
+  margin-top:50px;
+  background:white;
+  border-radius:10px;
+  height:300px;
+  grid-column: 2/8;
+}
+.weather-title{
+}
+/* Grid Structure Classes*/
+/*Quick Grid Template*/
+.grid-col-8{
+  display:grid;
+  grid-template-columns: repeat(8,1fr);
+}
+.grid-col-6{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.grid-col-4{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.grid-col-2{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.grid-col-1{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+/* Column Span Sizes*/
+.sz-1{
+  grid-column: span 1;
+}
+.sz-2{
+  grid-column: span 2;
+}
+.sz-3{
+  grid-column: span 3;
+}
+.sz-4{
+  grid-column: span 4;
+}
+.sz-5{
+  grid-column: span 5;
+}
+.sz-6{
+  grid-column: span 6;
+}
+.sz-7{
+  grid-column: span 6;
+}
+.sz-8{
+  grid-column: span 8;
+}
+
+/*Template Rows */
+.grid-row-8{
+  grid-template-rows: repeat(8,1fr);
+}
+.grid-row-7{
+  grid-template-rows: repeat(7,1fr);
+}
+.grid-row-6{
+  grid-template-rows: repeat(6,1fr);
+}
+.grid-row-5{
+  grid-template-rows: repeat(5,1fr);
+}
+.grid-row-4{
+  grid-template-rows: repeat(4,1fr);
+}
+.grid-row-3{
+  grid-template-rows: repeat(3,1fr);
+}
+.grid-row-2{
+  grid-template-rows: repeat(2,1fr);
+}
+.grid-row-1{
+  grid-template-rows: repeat(1,1fr);
+}
+
+  /* Row Span Sizes */
+.rw-span-9{
+  grid-row: 1/span 9;
+}
+.rw-span-8{
+  grid-row: 1/span 8;
+}
+.rw-span-7{
+  grid-row: 1/ span 7;
+}
+.rw-span-6{
+  grid-row: 1/span 6;
+}
+.rw-span-5{
+  grid-row: 1/span 5;
+}
+.rw-span-4{
+  grid-row: 1/span 4;
+}
+.rw-span-3{
+  grid-row: 1/span 3;
+}
+.rw-span-2{
+  grid-row: 1/ span 2;
+}
+.rw-span-1{
+  grid-row: 1/span 1;
+}
+
+
+
+/* Font Size Classes*/
+.font-small{
+  font-size:10px;
+}
+.font-medium{
+  font-size:20px
+}
+.font-large{
+  font-size:40px
+}
+
+/* Font Color Classes*/
+.color-white{
+  color:white;
+}
+.color-black{
+  color:black;
+}
+.color-light{
+  color:#17B090 ;
+}
+/* Positioning */
+.text-center{
+  text-align:center;
+}
+/*Margins */
+.margin-right-strong{
+  margin-right:50px;
+}
+.margin-left-strong{
+  margin-left:50px;
+}
+.margin-bottom-weak{
+  margin-bottom:20px;
+}
+.margin-bottom-strong{
+  margin-bottom:50px;
+}
+/*Background Color */
+.bg-light{
+  background:#f2f2f2;
+}
+.bg-dark{
+  background:#494D4B;
+}
+.bg-black{
+  background:black;
+}
+.bg-green{
+  background: #25A278;
+}
+.bg-white{
+  background:white;
+}
+
+/*Border Full*/
+.border-thick{
+  border:5px black solid;
+}
+.border-mild{
+  border:3px black solid;
+}
+.border-weak{
+  border:1px black solid;
+}
+/*Border Color */
+.bord-color-green{
+  border-color:#25A278;
+}
+.bord-color-black{
+  border-color:black;
+}
+.bord-color-white{
+  border-color:white;
+}
+.bord-color-none{
+  border-color: none;
+}
+/*Rounded Styling*/
+.edges-weak{
+  border-radius: 5px;
+}
+.edges-strong{
+  border-radius: 20px;
+}
+.edges-circle{
+  border-radius: 50%;
+}
+/* No Style Classes*/
+.no-style-link{
+  text-decoration:none;
+}
+.no-style-list{
+  list-style:none;
+}
+.no-style{
+  border:none;
+  outline:none;
+  appearance:none;
+  -webkit-appearance:none;
+}
